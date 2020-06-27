@@ -23,24 +23,66 @@ const NameParent = () => {
     );
 };
 //-----------------------------------
+const DataTitle = () => {
+    return (
+        <div id="DataTitle">DataTitle</div>
+    );
+};
+
+const DataBlok = () => {
+    return (
+        <div id="DataBlok">DataBlok</div>
+    );
+};
 
 const DataParent = () => {
     return (
-        <div id="DataParent">DataParent</div>
+        <div id="DataParent">
+            <DataTitle/>
+            <DataBlok/>
+        </div>
     );
 };
 //-----------------------------------
+const TypeTitle = () => {
+    return (
+        <div id="TypeTitle">TypeTitle</div>
+    );
+};
+const TypeBlok = () => {
+    return (
+        <div id="TypeBlok">TypeBlok</div>
+    );
+};
 const TypeParent = () => {
     return (
-        <div id="TypeParent">TypeParent</div>
+        <div id="TypeParent">
+            <TypeTitle/>
+            <TypeBlok/>
+        </div>
     );
 };
 //-----------------------------------
-const SizeParent = () => {
+const SizeTitle = () => {
     return (
-        <div id="SizeParent">SizeParent</div>
+        <div id="SizeTitle">SizeTitle</div>
     );
 };
+const SizeBlok = () => {
+    return (
+        <div id="SizeBlok">SizeBlok</div>
+    );
+};
+const SizeParent = () => {
+    return (
+        <div id="SizeParent">
+            <SizeTitle/>
+            <SizeBlok/>
+        </div>
+    );
+};
+
+
 const el = (
     <div id="TableFiles">
         <NameParent/>
