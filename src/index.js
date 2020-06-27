@@ -2,26 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import NameParent from './components/NameParent/NameParent';
 
-//-----------------------------------
-const NameTitle = () => {
-    return (
-        <div id="NameTitle">NameTitle</div>
-    );
-};
-const NameBlok = () => {
-    return (
-        <div id="NameBlok">NameBlok</div>
-    );
-};
-const NameParent = () => {
-    return (
-        <div id="NameParent">
-            <NameTitle/>
-            <NameBlok/>
-        </div>
-    );
-};
 //-----------------------------------
 const DataTitle = () => {
     return (
