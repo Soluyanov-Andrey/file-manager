@@ -4,35 +4,35 @@ import App from './App';
 import './index.css';
 
 
-const Home=()=>{
+const HomeParent=()=>{
     return(
-        <div id="Home">My Todo list</div>
+        <div id="HomeParent">HomeParent</div>
     );
 };
 
-const Data=()=>{
+const DataParent=()=>{
     return(
-        <div id="Type">My Todo list</div>
+        <div id="DataParent">DataParent</div>
     );
 };
 
-const Type=()=>{
+const TypeParent=()=>{
     return(
-        <div id="Type">My Todo list</div>
+        <div id="TypeParent">TypeParent</div>
     );
 };
 
-const Size=()=>{
+const SizeParent=()=>{
     return(
-        <div id="Size">My Todo list</div>
+        <div id="SizeParent">SizeParent</div>
     );
 };
 const el = (
     <div>
-        <Home/>
-        <Data/>
-        <Type/>
-        <Size/>
+        <HomeParent/>
+        <DataParent/>
+        <TypeParent/>
+        <SizeParent/>
     </div>
 )
 
