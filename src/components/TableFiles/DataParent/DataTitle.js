@@ -2,7 +2,7 @@ import React from "react";
 
 const DataTitle = () => {
     return (
-        <div id="DataTitle">DataTitle</div>
+        <div id="DataTitle">Дата изменения</div>
     );
 };
 

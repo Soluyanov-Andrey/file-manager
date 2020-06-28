@@ -2,7 +2,7 @@ import React from "react";
 
 const SizeTitle = () => {
     return (
-        <div id="SizeTitle">SizeTitle</div>
+        <div id="SizeTitle">Размер</div>
     );
 };
 

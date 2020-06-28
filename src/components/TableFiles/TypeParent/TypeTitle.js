@@ -2,7 +2,7 @@ import React from "react";
 
 const TypeTitle = () => {
     return (
-        <div id="TypeTitle">TypeTitle</div>
+        <div id="TypeTitle">Тип</div>
     );
 };
 

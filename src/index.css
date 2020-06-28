@@ -2,16 +2,15 @@
   overflow: auto;
 }
 #TableFiles {
-
   width: 1250px;
   height: 150px; /* Высота блока */
   padding: 5px; /* Поля вокруг текста */
   border: solid 1px black; /* Параметры рамки */
 }
 #NameParent{
-float:left;
+  float:left;
   border: 1px solid black;
-  width: 200px;
+  width: 150px;
 }
 #DataParent{
   width: 300px;
@@ -29,6 +28,20 @@ float:left;
   width: 300px;
   float:left;
   border: 1px solid black;
+}
+
+.NameBlok{
+  overflow: hidden;
+
+}
+.NameOverflow{
+  width: 500px;
+}
+.NameBlok img{
+
+  float:left;
+  width: 20px;
+  height: 20px;
 }
 
 body {

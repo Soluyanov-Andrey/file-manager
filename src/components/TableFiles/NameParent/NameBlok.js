@@ -2,7 +2,13 @@ import React from "react";
 
 const NameBlok = () => {
     return (
-        <div id="NameBlok">NameBlok</div>
+
+        <div className="NameBlok">
+            <div className="NameOverflow">
+                <img src="image/iconfinder.png" alt=""/>
+                <div className="NameBlok">Фаил имен</div>
+            </div>
+        </div>
     );
 };
 

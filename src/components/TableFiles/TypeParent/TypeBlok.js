@@ -2,7 +2,7 @@ import React from "react";
 
 const TypeBlok = () => {
     return (
-        <div id="TypeBlok">TypeBlok</div>
+        <div className="TypeBlok">Папка с файлами</div>
     );
 };
 
