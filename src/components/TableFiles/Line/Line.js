@@ -6,7 +6,7 @@ import SizeBasis from "./Size/SizeBasis";
 
 const Line = () => {
     return (
-        <div className = "Line">
+        <div className="Line">
           <NameBasis/>
             <DataBasis/>
             <TypeBasis/>

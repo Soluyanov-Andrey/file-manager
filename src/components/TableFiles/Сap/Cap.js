@@ -6,7 +6,7 @@ import SizeCap from "./Size/SizeCap";
 
 const Cap = () => {
     return (
-        <div id = "Cap">
+        <div id="Cap">
             <NameCap/>
                <div id="NameCapPartition"/>
             <DataCap/>
