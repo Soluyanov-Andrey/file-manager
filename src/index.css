@@ -74,3 +74,30 @@ body {
   float:left;
 
 }
+
+#Cap{
+  width: 1200px;
+  height: 25px;
+  border: 5px;
+  background: gray;
+}
+
+.NameCap{
+  width: 300px;
+  float:left;
+}
+
+.DataCap{
+  width: 300px;
+  float:left;
+}
+
+.TypeCap{
+  width: 300px;
+  float:left;
+}
+
+.SizeCap{
+  width: 300px;
+  float:left;
+}
