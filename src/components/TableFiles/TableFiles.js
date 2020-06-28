@@ -1,18 +1,12 @@
 import React from "react";
-import NameParent from './Line/Name/NameParent';
-import DataParent from './Line/Data/DataParent';
-import TypeParent from './Line/Type/TypeParent';
-import SizeParent from './Line/Size/SizeParent';
+import Line from "./Line/Line";
 
 const TableFiles = () => {
     return (
-        <div id="overflow">
-        <div id="TableFiles">
-            <NameParent/>
-            <DataParent/>
-            <TypeParent/>
-            <SizeParent/>
-        </div>
+        <div id="TableFilesComponents">
+            <div id="TFilesOverflow">
+                <Line/>
+            </div>
         </div>
     );
 };
