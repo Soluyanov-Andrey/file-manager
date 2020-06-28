@@ -48,7 +48,7 @@ body {
 
 }
 .Line{
-  width: 1200px;
+  width: 1205px;
   height: 25px;
   border: 5px;
   background: chartreuse;
@@ -76,17 +76,19 @@ body {
 }
 
 #Cap{
-  width: 1200px;
+  width: 1205px;
   height: 25px;
   border: 5px;
-  background: gray;
+
 }
 
 .NameCap{
   width: 300px;
   float:left;
 }
+.NameCapText{
 
+}
 .DataCap{
   width: 300px;
   float:left;
@@ -100,4 +102,29 @@ body {
 .SizeCap{
   width: 300px;
   float:left;
+}
+#DataCapPartition{
+  float:left;
+  width: 1px;
+  height: 20px;
+  background: gray;
+}
+#NameCapPartition{
+  float:left;
+  width: 1px;
+  height: 20px;
+  background: gray;
+}
+#SizeCapPartition{
+  float:left;
+  width: 1px;
+  height: 20px;
+  background: gray;
+}
+
+#TypeCapPartition{
+  float:left;
+  width: 1px;
+  height: 20px;
+  background: gray;
 }

@@ -4,9 +4,11 @@ const NameCap = () => {
     return (
         <div className="NameCap">
             <div className="NameCapOverflow">
-                <div className="NameCapText">Имя</div>
+                <div className="NameCapText">&nbsp;Имя</div>
             </div>
+
         </div>
+
     );
 };
 

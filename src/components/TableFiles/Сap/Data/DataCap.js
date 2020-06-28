@@ -4,7 +4,7 @@ const DataCap = () => {
     return (
         <div className="DataCap">
             <div className="DataCapOverflow">
-                <div className="DataCapText">Дата изменения</div>
+                <div className="DataCapText">&nbsp;Дата изменения</div>
             </div>
         </div>
     );

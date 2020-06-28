@@ -7,6 +7,11 @@ const TableFiles = () => {
             <div id="TFilesOverflow">
                 <Cap/>
                 <Line/>
+                <Line/>
+                <Line/>
+                <Line/>
+                <Line/>
+                <Line/>
             </div>
         </div>
     );

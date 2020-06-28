@@ -4,7 +4,7 @@ const SizeCap = () => {
     return (
         <div className="SizeCap">
             <div className="SizeCapOverflow">
-                <div className="SizeCapText">Размер </div>
+                <div className="SizeCapText">&nbsp;Размер</div>
             </div>
         </div>
     );

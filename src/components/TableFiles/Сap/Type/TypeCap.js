@@ -4,7 +4,8 @@ const TypeCap = () => {
     return (
         <div className="TypeCap">
             <div className="TypeCapOverflow">
-                <div className="TypeCapText">Тип</div>
+                <div className="TypeCapText">&nbsp;Тип</div>
+
             </div>
         </div>
     );
