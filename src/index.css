@@ -1,5 +1,36 @@
+#overflow{
+  overflow: auto;
+}
+#TableFiles {
+
+  width: 1250px;
+  height: 150px; /* Высота блока */
+  padding: 5px; /* Поля вокруг текста */
+  border: solid 1px black; /* Параметры рамки */
+}
+#NameParent{
+float:left;
+  border: 1px solid black;
+  width: 200px;
+}
+#DataParent{
+  width: 300px;
+  float:left;
+  border: 1px solid black;
+
+}
+#TypeParent{
+  width: 400px;
+  float:left;
+  border: 1px solid black;
+
+}
+#SizeParent{
+  width: 300px;
+  float:left;
+  border: 1px solid black;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+
 }

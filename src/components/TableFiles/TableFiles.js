@@ -6,12 +6,13 @@ import SizeParent from './SizeParent/SizeParent';
 
 const TableFiles = () => {
     return (
+        <div id="overflow">
         <div id="TableFiles">
             <NameParent/>
             <DataParent/>
             <TypeParent/>
             <SizeParent/>
-
+        </div>
         </div>
     );
 };
