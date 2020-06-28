@@ -1,8 +1,8 @@
 import React from "react";
-import NameParent from './NameParent/NameParent';
-import DataParent from './DataParent/DataParent';
-import TypeParent from './TypeParent/TypeParent';
-import SizeParent from './SizeParent/SizeParent';
+import NameParent from './Line/Name/NameParent';
+import DataParent from './Line/Data/DataParent';
+import TypeParent from './Line/Type/TypeParent';
+import SizeParent from './Line/Size/SizeParent';
 
 const TableFiles = () => {
     return (
