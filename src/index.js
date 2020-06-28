@@ -2,22 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import NameParent from './components/NameParent/NameParent';
-import DataParent from './components/DataParent/DataParent';
-import TypeParent from './components/TypeParent/TypeParent';
-import SizeParent from './components/SizeParent/SizeParent';
-
-const el = (
-    <div id="TableFiles">
-        <NameParent/>
-        <DataParent/>
-        <TypeParent/>
-        <SizeParent/>
-
-    </div>
-)
+import TableFiles from './components/TableFiles/TableFiles';
 
 ReactDOM.render(
-    el,
+    <TableFiles/>,
     document.getElementById('root')
 );
