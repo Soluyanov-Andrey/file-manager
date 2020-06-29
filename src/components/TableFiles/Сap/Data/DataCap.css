@@ -1,6 +1,10 @@
 .DataCap{
     width: 300px;
     float:left;
+    overflow: hidden;
+}
+.DataCapOverflow{
+    width: 500px;
 }
 #DataCapPartition{
     float:left;

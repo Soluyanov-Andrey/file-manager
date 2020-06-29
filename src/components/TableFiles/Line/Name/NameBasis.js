@@ -5,7 +5,7 @@ const NameBasis = () => {
         <div className="NameBlok">
             <div className="NameOverflow">
                 <img src="image/iconfinder.png" alt=""/>
-                <div className="NameText">Фаил имен</div>
+                <div className="NameText">Фаил имен ggggggggggggggggggg</div>
             </div>
         </div>
     );

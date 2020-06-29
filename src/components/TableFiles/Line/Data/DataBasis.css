@@ -1,5 +1,8 @@
 .DataBlok{
-    width: 300px;
+    width: 80px;
     float:left;
-
+    overflow: hidden;
+}
+.DataOverflow{
+    width: 300px;
 }

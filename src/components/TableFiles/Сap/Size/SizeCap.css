@@ -1,6 +1,10 @@
 .SizeCap{
     width: 300px;
     float:left;
+    overflow: hidden;
+}
+.SizeCapOverflow{
+    width: 500px;
 }
 
 #SizeCapPartition{

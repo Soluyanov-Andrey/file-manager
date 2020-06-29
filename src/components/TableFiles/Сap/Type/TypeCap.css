@@ -1,8 +1,11 @@
 .TypeCap{
     width: 300px;
     float:left;
+    overflow: hidden;
 }
-
+.TypeCapOverflow{
+    width: 500px;
+}
 #TypeCapPartition{
     float:left;
     width: 1px;

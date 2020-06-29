@@ -1,6 +1,10 @@
 .NameCap{
     width: 300px;
     float:left;
+    overflow: hidden;
+}
+.NameCapOverflow{
+    width: 500px;
 }
 #NameCapPartition{
     float:left;

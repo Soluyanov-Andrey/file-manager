@@ -1,5 +1,8 @@
 .SizeBlok{
     width: 300px;
     float:left;
-
+    overflow: hidden;
+}
+.SizeOverflow{
+    width: 500px;
 }
