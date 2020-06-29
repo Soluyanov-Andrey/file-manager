@@ -76,7 +76,7 @@ body {
 }
 
 #Cap{
-  width: 1205px;
+  width: 1207px;
   height: 25px;
   border: 5px;
 
@@ -105,13 +105,14 @@ body {
 }
 #DataCapPartition{
   float:left;
-  width: 1px;
+  width: 2px;
   height: 20px;
   background: gray;
 }
 #NameCapPartition{
+  cursor: e-resize;
   float:left;
-  width: 1px;
+  width: 2px;
   height: 20px;
   background: gray;
 }
