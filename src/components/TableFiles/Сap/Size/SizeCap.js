@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SizeCap.css"
 const SizeCap = () => {
     return (
         <div className="SizeCap">

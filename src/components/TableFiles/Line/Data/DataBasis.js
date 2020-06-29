@@ -1,5 +1,5 @@
 import React from "react";
-
+import './DataBasis.css'
 const DataBasis = () => {
     return (
         <div className="DataBlok">

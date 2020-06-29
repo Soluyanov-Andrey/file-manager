@@ -1,0 +1,14 @@
+.NameBlok{
+    width: 300px;
+    float:left;
+    overflow: hidden;
+}
+.NameOverflow{
+    width: 500px;
+}
+.NameBlok img{
+
+    float:left;
+    width: 20px;
+    height: 20px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./DataCap.css"
 const DataCap = () => {
     return (
         <div className="DataCap">

@@ -1,0 +1,10 @@
+.DataCap{
+    width: 300px;
+    float:left;
+}
+#DataCapPartition{
+    float:left;
+    width: 1px;
+    height: 20px;
+    background: gray;
+}

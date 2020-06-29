@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SizeBasis.css"
 const SizeBasis = () => {
     return (
         <div className="SizeBlok">

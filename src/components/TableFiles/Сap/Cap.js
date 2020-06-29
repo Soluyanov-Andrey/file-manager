@@ -3,7 +3,7 @@ import NameCap from "./Name/NameCap";
 import DataCap from "./Data/DataCap"
 import TypeCap from "./Type/TypeCap";
 import SizeCap from "./Size/SizeCap";
-
+import "./Cap.css"
 export default class Cap extends Component {
     render() {
         return (

@@ -1,0 +1,10 @@
+.NameCap{
+    width: 300px;
+    float:left;
+}
+#NameCapPartition{
+    float:left;
+    width: 1px;
+    height: 20px;
+    background: gray;
+}

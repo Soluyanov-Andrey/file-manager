@@ -1,0 +1,11 @@
+.TypeCap{
+    width: 300px;
+    float:left;
+}
+
+#TypeCapPartition{
+    float:left;
+    width: 1px;
+    height: 20px;
+    background: gray;
+}

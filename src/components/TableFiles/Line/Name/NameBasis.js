@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./NameBasis.css"
 const NameBasis = () => {
     return (
         <div className="NameBlok">

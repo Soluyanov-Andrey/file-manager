@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./NameCap.css"
 const NameCap = () => {
     return (
         <div className="NameCap">

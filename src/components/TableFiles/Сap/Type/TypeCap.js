@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./TypeCap.css"
 const TypeCap = () => {
     return (
         <div className="TypeCap">

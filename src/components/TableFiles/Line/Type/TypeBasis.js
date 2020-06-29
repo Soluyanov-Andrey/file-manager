@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./TypeBasis.css"
 const TypeBasis = () => {
     return (
         <div className="TypeBlok">

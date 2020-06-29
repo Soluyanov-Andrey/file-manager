@@ -1,0 +1,11 @@
+.SizeCap{
+    width: 300px;
+    float:left;
+}
+
+#SizeCapPartition{
+    float:left;
+    width: 1px;
+    height: 20px;
+    background: gray;
+}
