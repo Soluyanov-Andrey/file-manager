@@ -7,7 +7,7 @@ import "./Line.css"
 
 const Line = (props) => (
 
-    <div className="Line">
+    <div className="Line" id={props.id}>
         <NameBasis name={props.name}/>
         <DataBasis data={props.data}/>
         <TypeBasis type={props.type}/>
