@@ -1,6 +1,10 @@
 .Line{
-    width: 1205px;
+    width: 1250px;
     height: 25px;
-    border: 5px;
-    background: chartreuse;
+    border: 1px solid white ;
+}
+.Line:hover {
+    padding: 0px;
+    border: 1px  solid #b8d6fb;
+    background: linear-gradient(to top ,#edf4fd ,#f9fbfd ); /* Цвет фона под ссылкой */
 }

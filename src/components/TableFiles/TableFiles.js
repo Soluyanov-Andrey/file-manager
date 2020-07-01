@@ -1,6 +1,6 @@
 import React from "react";
 import Line from "./Line/Line";
-import Cap from "./Сap/Cap";
+import Cap from "./Cap/Cap";
 const TableFiles = () => {
     return (
         <div id="TableFilesComponents">
