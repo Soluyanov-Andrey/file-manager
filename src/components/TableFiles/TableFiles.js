@@ -17,14 +17,11 @@ class TableFiles extends Component {
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
                     <Cap/>
-                    { this.state.line.map((line_v, index)=> {
+                    { this.state.line.map((props, index)=> {
                         return(
                             <Line
                                 key={index}
-                                name={line_v.name}
-                                data={line_v.data}
-                                type={line_v.type}
-                                size={line_v.size}
+                                name={props}
                             />
                         )
                     }) }
