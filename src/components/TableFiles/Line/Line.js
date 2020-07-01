@@ -9,9 +9,9 @@ const Line = (props) => (
 
     <div className="Line">
         <NameBasis name={props.name}/>
-        <DataBasis/>
-        <TypeBasis/>
-        <SizeBasis/>
+        <DataBasis data={props.data}/>
+        <TypeBasis type={props.type}/>
+        <SizeBasis size={props.size}/>
     </div>
 
 )

@@ -1,10 +1,10 @@
 import React from "react";
 import "./TypeBasis.css"
-const TypeBasis = () => {
+const TypeBasis = (props) => {
     return (
         <div className="TypeBlok">
             <div className="TypeOverflow">
-                <div className="TypeText">Папка с файлами</div>
+                <div className="TypeText">{props.type}</div>
             </div>
         </div>
     );
