@@ -5,6 +5,10 @@ import TypeCap from "./Type/TypeCap";
 import SizeCap from "./Size/SizeCap";
 import "./Cap.css"
 export default class Cap extends Component {
+    constructor(props) {
+        super();
+        console.log(props.props.DataCap);
+    }
     render() {
         return (
             <div id="Cap">
