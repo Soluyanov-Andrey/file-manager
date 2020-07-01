@@ -8,7 +8,8 @@
 }
 #TypeCapPartition{
     float:left;
-    width: 1px;
+    border-right:2px solid gray;
+    width: 5px;
     height: 20px;
-    background: gray;
+    cursor: e-resize;
 }
