@@ -21,7 +21,10 @@ class TableFiles extends Component {
                         return(
                             <Line
                                 key={index}
-                                name={props}
+                                name={props.name}
+                                data={props.data}
+                                type={props.type}
+                                size={props.size}
                             />
                         )
                     }) }
