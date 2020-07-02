@@ -3,19 +3,30 @@ import Line from "./Line/Line";
 import Cap from "./Cap/Cap";
 
 class TableFiles extends Component {
-    state = {
-        line: [
-            { name:'Документ', data: '17.05.2002', type:'Пустая папка',size: 15,id:1},
-            { name:'Фаил', data: '17.05.2003', type:'Пустая папка',size: 15,id:2},
-            { name:'текст', data: '17.05.2004', type:'Пустая папка',size: 15,id:3}
-        ],
-        DataCap: 300,
-        NameCap: 300,
-        SizeCap: 300,
-        TypeCap: 300
+    constructor() {
+        super();
+        this.state = {
+            line: [
+                { name:'Документ', data: '17.05.2002', type:'Пустая папка',size: 15,id:1},
+                { name:'Фаил', data: '17.05.2003', type:'Пустая папка',size: 15,id:2},
+                { name:'текст', data: '17.05.2004', type:'Пустая папка',size: 15,id:3}
+            ],
+            DataCap: 300,
+            NameCap: 300,
+            SizeCap: 300,
+            TypeCap: 300
+        }
+
+        this.foo = () =>{alert(this.state.line[0].name); };
+        this.foo1 = () =>{window.addEventListener('click', this.foo, false); };
+        this.foo1();
+         // document.body.addEventListener('click', foo, false);
     }
 
+
+
     render() {
+
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">

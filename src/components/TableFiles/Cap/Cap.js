@@ -9,11 +9,19 @@ export default class Cap extends Component {
         super();
         console.log(props.props.DataCap);
     }
+
+    onMouseDown = () =>{
+        console.log("конпка мышы нажата");
+    };
+    onMouseUp = () =>{
+        console.log("Кнопка мыши отпущена над элементом");
+    };
+
     render() {
         return (
             <div id="Cap">
                 <NameCap/>
-                  <div id="NameCapPartition"/>
+                  <div id="NameCapPartition" onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp}/>
                 <DataCap/>
                   <div id="DataCapPartition"/>
                 <TypeCap/>
