@@ -14,23 +14,32 @@ class TableFiles extends Component {
             DataCap: 300,
             NameCap: 300,
             SizeCap: 300,
-            TypeCap: 300
+            TypeCap: 300,
+            DataCapMove: false
         }
 
 
          // document.body.addEventListener('click', foo, false);
     }
-    test = () =>{this.setState({
-        DataCap:500
-    })};
 
-    foo = () =>{alert(this.state.DataCap); };
-    foo1 = () =>{window.addEventListener('click', this.foo, false); };
+    test = () =>{this.setState({
+        DataCapMove: true
+    })
+        window.addEventListener('mousemove', this.foo2, false);
+        window.addEventListener('click', this.foo, false);
+    };
+
+    foo = () =>{
+        window.removeEventListener('mousemove', this.foo2, false);
+        window.removeEventListener('click', this.foo, false);
+    };
+    // foo1 = () =>{window.addEventListener('click', this.foo, false); };
+
     foo2 = () =>{console.log(event.pageY); };
-    foo4 = () =>{window.addEventListener('mousemove', this.foo2, false); };
+    // foo4 = () =>{window.addEventListener('mousemove', this.foo2, false); };
     render() {
-        this.foo1();
-        this.foo4();
+        // this.foo1();
+        // this.foo4();
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
