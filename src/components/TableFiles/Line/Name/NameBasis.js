@@ -2,11 +2,12 @@ import React from "react";
 import "./NameBasis.css"
 
 const NameBasis = (props) => {
+    const NameBasisProps =props.props;
     return (
         <div className="NameBlok">
             <div className="NameOverflow">
                 <img src="image/iconfinder.png" alt=""/>
-                <div className="NameText">{props.props.props.name}</div>
+                <div className="NameText">{NameBasisProps.name}</div>
             </div>
         </div>
     );
