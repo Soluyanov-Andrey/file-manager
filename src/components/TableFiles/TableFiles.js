@@ -25,9 +25,11 @@ class TableFiles extends Component {
 
     foo = () =>{alert(this.state.DataCap); };
     foo1 = () =>{window.addEventListener('click', this.foo, false); };
-
+    foo2 = () =>{console.log(event.pageY); };
+    foo4 = () =>{window.addEventListener('mousemove', this.foo2, false); };
     render() {
         this.foo1();
+        this.foo4();
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
