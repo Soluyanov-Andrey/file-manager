@@ -49,6 +49,7 @@ class TableFiles extends Component {
                             <Line
                                 key={index}
                                 props={props}
+                                props2={this.state}
                             />
                         )
                     }) }

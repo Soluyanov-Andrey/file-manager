@@ -1,0 +1,221 @@
+[33mcommit 041d4922d304bf3ef1efb7e31e5f25238e9bc1b5[m[33m ([m[1;36mHEAD -> [m[1;32mtest[m[33m)[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 17:07:27 2020 +0400
+
+    Делаем props
+
+[33mcommit fa3666113e089b812630dd96ed1f2316ec792c64[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 16:49:14 2020 +0400
+
+    Очень длиный props
+
+[33mcommit f14db41360a8d40c3450c5a829afbb1f1fdb30ba[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 16:20:30 2020 +0400
+
+    как передать весь props
+
+[33mcommit cd7960d3db629c282aa0d3af45fd27d7718c4bd1[m[33m ([m[1;31morigin/test[m[33m)[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 15:31:03 2020 +0400
+
+    removeEventListener  test6
+
+[33mcommit 273150b0482b8eb5b7e4064cd95b0cd9a0cc0def[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 14:55:04 2020 +0400
+
+    Функция за конструктором  test5
+
+[33mcommit e659c5831bc37db06249b5aa78278bec0d85979e[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 14:35:33 2020 +0400
+
+    следим за движением мыши test4
+
+[33mcommit c4acfc8a8f33d3662bf2c1d44177d9fd332809b8[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 14:09:52 2020 +0400
+
+    Изменяем state из внутреннего компанента test2
+
+[33mcommit c06c8ef61a09f04fce4bed0c18b661a85e47d348[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 13:58:35 2020 +0400
+
+    test2
+
+[33mcommit 38dd010571744d336fa2a1045e88f4892a68b083[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Thu Jul 2 13:38:19 2020 +0400
+
+    test1
+
+[33mcommit 834898bd7499d230f64e93881fbd4a1c0d679da3[m[33m ([m[1;31morigin/branch1[m[33m, [m[1;32mbranch1[m[33m)[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 23:23:41 2020 +0400
+
+    передать значения props в компанент построенный на классе
+
+[33mcommit f453c371943f26786a294c08cfbeda777f4687ee[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 21:33:33 2020 +0400
+
+    Изменил верхние разделители таблицы
+
+[33mcommit 74f9e4da2d000cc3b4f6e1fa5e849ff82a9444b0[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 20:50:15 2020 +0400
+
+    сделали id для line
+
+[33mcommit 69b5c4d5d302f604cf94ecbf8a07a033d56fe28b[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 20:20:17 2020 +0400
+
+    line берет данные из props
+
+[33mcommit 0260cdf5017a97a285c0c1defdfe7b1ac5a8a4c6[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 20:13:46 2020 +0400
+
+    Вернули все как было до эксперемента заменив переменную на Props
+
+[33mcommit 7e80392b840b6f7a93c2709f1fc1e9222ced832e[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 20:11:37 2020 +0400
+
+    Эксперемент
+
+[33mcommit 71167a565cf83cd2b47f060d23e9e5854696c8be[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 19:59:23 2020 +0400
+
+    Пропс передали через компаненты
+
+[33mcommit 4f872aae24b1ec4d4bb4940847aad2cfc3ea1ad3[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 12:39:44 2020 +0400
+
+    Добавили стили для line подсветки
+
+[33mcommit e21c560224a6eccbf3206da2d0f4e24c0720fc6c[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Wed Jul 1 12:36:45 2020 +0400
+
+    Переделали папку cap в help подробности
+
+[33mcommit f329058f33086be084d439d05203baa3c656c2df[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Tue Jun 30 00:09:25 2020 +0400
+
+    добавили Overflow в css для всех блоков
+
+[33mcommit 49487411c7a22232fd7cebd5cdb4919ffff2c8a9[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Mon Jun 29 20:16:29 2020 +0400
+
+    Перенесли css в компаненты
+
+[33mcommit b2cc37b33a6ddee89cf2365136ea382ae99f2443[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 22:01:48 2020 +0400
+
+    Переделали Cap под компанент класса
+
+[33mcommit b9e84ea7c7b7b30a17caa527b6c9bbba3510884d[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 21:19:13 2020 +0400
+
+    Небольшой рефакторинг
+
+[33mcommit 605e3776c3cd7ebe7e3b78b5fa6b2eb51726d4ed[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 18:44:01 2020 +0400
+
+    Примерная таблица созданна
+
+[33mcommit 0686c55edcde041cc73e07ddf6a207928697399a[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 17:51:41 2020 +0400
+
+    Шаг 3 в переделки структур
+
+[33mcommit f3ead8e1cf2e5e4e5784ef2ba981aa2bc9692142[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 17:14:13 2020 +0400
+
+    Шаг 2 в переделки структуры
+
+[33mcommit 12ecc55ab0f2683cb9cb99816f674faacc8d1c09[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 16:14:06 2020 +0400
+
+    Шаг первый в переделки структуры
+
+[33mcommit 6fe8c5f2305ff0684874ee39c653346199d8118e[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 15:33:19 2020 +0400
+
+    Немного доработали
+
+[33mcommit 6d279bfa4ccfb0160cdb4c8de77277f3a736bb3f[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 13:16:41 2020 +0400
+
+    Добавили скрол к css
+
+[33mcommit 87cbbb3a116dcc09e265a53d0d59ba8887c5a3ac[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 10:20:12 2020 +0400
+
+    Небольшой рефакторинг убрал лишние файлы
+
+[33mcommit 184edc010edf7c729e7382f0fac0312ee5db65f7[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 10:18:16 2020 +0400
+
+    Разбиение на компаненты 2
+
+[33mcommit 18930ddbd1820632532695db2eaa72d55be643ca[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 09:58:06 2020 +0400
+
+    Создаю компаненты дальше
+
+[33mcommit a3d1cf8565ca9cde5d7eb73dde7f0d5f69b189e0[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 01:50:06 2020 +0400
+
+    Вынес часть в фаил
+
+[33mcommit b525451f5cfc95daf0404b3165216452577978b7[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 01:24:45 2020 +0400
+
+    Разбили все на компаненты
+
+[33mcommit df8b378d83b0eb3d9c9d425c379f5242f00b7178[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 01:17:46 2020 +0400
+
+    компанент с вложением
+
+[33mcommit b186241e61832f7cb52ea3ef3f8f7a1bcada3bab[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 00:47:21 2020 +0400
+
+    Небольшой рефакторинг
+
+[33mcommit dbbf17d8bf1ea99b6042cfa4801284233e25e296[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sun Jun 28 00:30:23 2020 +0400
+
+    Первые компаненты
+
+[33mcommit c547d7a5ebd851e3c35ef0d0dabfe8098c573b40[m
+Author: a.soluyanov <a--b--s@yandex.ru>
+Date:   Sat Jun 27 23:17:51 2020 +0400
+
+    Начало проекта
