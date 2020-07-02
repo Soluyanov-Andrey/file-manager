@@ -17,16 +17,15 @@ class TableFiles extends Component {
             TypeCap: 300
         }
 
-        this.foo = () =>{alert(this.state.line[0].name); };
-        this.foo1 = () =>{window.addEventListener('click', this.foo, false); };
-        this.foo1();
+
          // document.body.addEventListener('click', foo, false);
     }
 
-
+    foo = () =>{alert(this.state.line[0].name); };
+    foo1 = () =>{window.addEventListener('click', this.foo, false); };
 
     render() {
-
+        this.foo1();
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
