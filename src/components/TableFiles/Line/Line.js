@@ -7,11 +7,11 @@ import "./Line.css"
 
 const Line = (props) => (
 
-    <div className="Line" id={props.id}>
-        <NameBasis name={props.name}/>
-        <DataBasis data={props.data}/>
-        <TypeBasis type={props.type}/>
-        <SizeBasis size={props.size}/>
+    <div className="Line" id={props.props.id}>
+        <NameBasis name={props.props.name}/>
+        <DataBasis data={props.props.data}/>
+        <TypeBasis type={props.props.type}/>
+        <SizeBasis size={props.props.size}/>
     </div>
 
 )
