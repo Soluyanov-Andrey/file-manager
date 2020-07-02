@@ -17,11 +17,12 @@ class TableFiles extends Component {
             TypeCap: 300
         }
 
-        this.test = () =>{this.setState({
-            DataCap:500
-        })};
+
          // document.body.addEventListener('click', foo, false);
     }
+    test = () =>{this.setState({
+        DataCap:500
+    })};
 
     foo = () =>{alert(this.state.DataCap); };
     foo1 = () =>{window.addEventListener('click', this.foo, false); };
