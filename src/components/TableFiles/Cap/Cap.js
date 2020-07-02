@@ -12,6 +12,7 @@ export default class Cap extends Component {
 
     onMouseDown = () =>{
         console.log("конпка мышы нажата");
+        this.props.fun();
     };
     onMouseUp = () =>{
         console.log("Кнопка мыши отпущена над элементом");
