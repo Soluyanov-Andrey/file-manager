@@ -8,7 +8,7 @@ import "./Line.css"
 const Line = (props) => (
 
     <div className="Line" id={props.props.id}>
-        <NameBasis name={props.props.name}/>
+        <NameBasis props={props}/>
         <DataBasis data={props.props.data}/>
         <TypeBasis type={props.props.type}/>
         <SizeBasis size={props.props.size}/>
