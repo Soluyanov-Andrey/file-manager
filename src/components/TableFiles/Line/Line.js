@@ -7,7 +7,7 @@ import "./Line.css"
 
 const Line = (props) => {
    const LineProps =props.props;
-   console.log(props.props2.DataCap)
+   console.log(props.the_main);
     return (
         <div className="Line" id={LineProps.id}>
             <NameBasis props={LineProps}/>
