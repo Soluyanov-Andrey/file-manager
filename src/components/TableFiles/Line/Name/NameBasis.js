@@ -4,9 +4,7 @@ import "./NameBasis.css"
 const NameBasis = (props) => {
     const NameBasisProps =props.props;
     const TodoComponent = {
-        width: "300px",
-        float:"left",
-        overflow: "hidden"
+        width: props.the_main.NameCap+"px"
     }
     return (
         <div className="NameBlok" style={TodoComponent}>

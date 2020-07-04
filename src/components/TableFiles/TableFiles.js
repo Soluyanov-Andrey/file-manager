@@ -39,7 +39,13 @@ class TableFiles extends Component {
     // foo1 = () =>{window.addEventListener('click', this.foo, false); };
 
     foo2 = () => {
-        console.log(event.pageY);
+        this.setState({
+            the_main: [{
+                NameCap: event.pageX
+            }
+            ]
+        })
+        // console.log(event.pageX);
     };
 
     // foo4 = () =>{window.addEventListener('mousemove', this.foo2, false); };
