@@ -1,14 +1,9 @@
-В TebleFiles пришлось добавлять удаление для каждого обработчика
-Получается что функция вызывается каждый раз при отпускании мыши, но те обработчики которые
-небыли назначены, ошибки не выдают. тоесть например
-window.removeEventListener('mousemove', this.changeTypeCap, false);
-не назначин но при этом ошибки нет
-moving_remove = () => {
-        window.removeEventListener('mousemove', this.changeTypeCap, false);
-        window.removeEventListener('mousemove', this.changeSizeCap, false);
-        window.removeEventListener('mousemove', this.changeDataCap, false);
-        window.removeEventListener('mousemove', this.changeNameCap, false);
-        window.removeEventListener('click', this.moving_remove, false);
-    };
+  shouldComponentUpdate(nextProps, nextState) {
 
-добавили обработчики на все перемещающиеся перегародки в таблице
+        console.log(nextState.the_main[0]);
+        return true;
+
+    }
+ срабатывает когда происходит обновление state или props  в компаненте
+ можно смотреть state и смотреть что происходит в нем определяя в console.log
+ нужное значение

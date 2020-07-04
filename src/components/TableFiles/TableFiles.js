@@ -89,6 +89,12 @@ class TableFiles extends Component {
         })
     };
 
+    shouldComponentUpdate(nextProps, nextState) {
+
+        console.log(nextState.the_main[0]);
+        return true;
+
+    }
 
     render() {
         return (
