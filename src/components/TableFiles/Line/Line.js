@@ -8,9 +8,11 @@ import "./Line.css"
 const Line = (props) => {
     const LineProps = props.line;
     // name: "Документ", data: "17.05.2002", type: "Пустая папка", size: 15, id: 1 }
-
+    const WidthCap = {
+        width: props.WidthCap+"px"
+    }
     return (
-        <div className="Line" id={LineProps.id}>
+        <div className="Line" id={LineProps.id} style={WidthCap}>
             <NameBasis name={LineProps.name} NameCap={props.NameCap}/>
             <DataBasis data={LineProps.data} DataCap={props.DataCap}/>
             <TypeBasis type={LineProps.type} TypeCap={props.TypeCap}/>

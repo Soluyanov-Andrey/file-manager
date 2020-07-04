@@ -14,8 +14,7 @@ class TableFiles extends Component {
                 {name: 'Фаил', data: '17.05.2003', type: 'Пустая папка', size: 15, id: 2},
                 {name: 'текст', data: '17.05.2004', type: 'Пустая папка', size: 15, id: 3}
             ],
-
-            WidthCap: 1300,
+            WidthCap: 1250,
             DataCap: 300,
             NameCap: 300,
             SizeCap: 300,
@@ -83,24 +82,28 @@ class TableFiles extends Component {
 
     NameCapСallback = (value) => {
         this.setState({
+            WidthCap: this.state.WidthCap + value,
             NameCap: this.state.NameCap + value
         })
     }
 
     DataCapСallback = (value) => {
         this.setState({
+            WidthCap: this.state.WidthCap + value,
             DataCap: this.state.DataCap + value
         })
     }
 
     TypeCapСallback = (value) => {
         this.setState({
+            WidthCap: this.state.WidthCap + value,
             TypeCap: this.state.TypeCap + value
         })
     }
 
     SizeCapСallback = (value) => {
         this.setState({
+            WidthCap: this.state.WidthCap + value,
             SizeCap: this.state.SizeCap + value
         })
     }
@@ -142,6 +145,7 @@ class TableFiles extends Component {
                                 NameCap={this.state.NameCap}
                                 SizeCap={this.state.SizeCap}
                                 TypeCap={this.state.TypeCap}
+                                WidthCap={this.state.WidthCap}
                             />
                         )
                     })}
