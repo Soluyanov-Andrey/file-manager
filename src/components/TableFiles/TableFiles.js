@@ -23,18 +23,37 @@ class TableFiles extends Component {
     }
 
     //Добавили перемещение
-    moving = () => {
-        window.addEventListener('mousemove', this.changeState, false);
+    moving = (name_components) => {
+        switch (name_components) {
+            case 'NameCap':
+                window.addEventListener('mousemove', this.changeNameCap, false);
+                break;
+            case 'DataCap':
+                window.addEventListener('mousemove', this.changeDataCap, false);
+                break;
+            case 'SizeCap':
+                window.addEventListener('mousemove', this.changeSizeCap, false);
+                break;
+            case 'TypeCap':
+                window.addEventListener('mousemove', this.changeTypeCap, false);
+                break;
+            default:
+
+        }
+
         window.addEventListener('click', this.moving_remove, false);
     };
 
     //Удалили перемещение
     moving_remove = () => {
-        window.removeEventListener('mousemove', this.changeState, false);
+        window.removeEventListener('mousemove', this.changeTypeCap, false);
+        window.removeEventListener('mousemove', this.changeSizeCap, false);
+        window.removeEventListener('mousemove', this.changeDataCap, false);
+        window.removeEventListener('mousemove', this.changeNameCap, false);
         window.removeEventListener('click', this.moving_remove, false);
     };
-
-    changeState = () => {
+    //Срабатывает при изменении NameCap
+    changeNameCap = () => {
         this.setState({
             the_main: [{
                 NameCap: event.pageX
@@ -42,6 +61,34 @@ class TableFiles extends Component {
             ]
         })
     };
+    //Срабатывает при изменении DataCap
+    changeDataCap = () => {
+        this.setState({
+            the_main: [{
+                DataCap: event.pageX
+            }
+            ]
+        })
+    };
+    //Срабатывает при изменении SizeCap
+    changeSizeCap = () => {
+        this.setState({
+            the_main: [{
+                SizeCap: event.pageX
+            }
+            ]
+        })
+    };
+    //Срабатывает при изменении TypeCap
+    changeTypeCap = () => {
+        this.setState({
+            the_main: [{
+                TypeCap: event.pageX
+            }
+            ]
+        })
+    };
+
 
     render() {
         return (

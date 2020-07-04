@@ -15,9 +15,9 @@ const Line = (props) => {
     return (
         <div className="Line" id={LineProps.id}>
             <NameBasis name={LineProps.name} NameCap={The_Main.NameCap}/>
-            <DataBasis data={LineProps.data}/>
-            <TypeBasis type={LineProps.type}/>
-            <SizeBasis size={LineProps.size}/>
+            <DataBasis data={LineProps.data} DataCap={The_Main.DataCap}/>
+            <TypeBasis type={LineProps.type} TypeCap={The_Main.TypeCap}/>
+            <SizeBasis size={LineProps.size} SizeCap={The_Main.SizeCap}/>
         </div>
     );
 }

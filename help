@@ -1,3 +1,14 @@
-Оказалось что в пропс можно присваивать любые имена как я и зделал в
-TableFiles
-переделываем в итоге название переменных
+В TebleFiles пришлось добавлять удаление для каждого обработчика
+Получается что функция вызывается каждый раз при отпускании мыши, но те обработчики которые
+небыли назначены, ошибки не выдают. тоесть например
+window.removeEventListener('mousemove', this.changeTypeCap, false);
+не назначин но при этом ошибки нет
+moving_remove = () => {
+        window.removeEventListener('mousemove', this.changeTypeCap, false);
+        window.removeEventListener('mousemove', this.changeSizeCap, false);
+        window.removeEventListener('mousemove', this.changeDataCap, false);
+        window.removeEventListener('mousemove', this.changeNameCap, false);
+        window.removeEventListener('click', this.moving_remove, false);
+    };
+
+добавили обработчики на все перемещающиеся перегародки в таблице

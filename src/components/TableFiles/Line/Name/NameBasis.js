@@ -3,11 +3,11 @@ import "./NameBasis.css"
 
 const NameBasis = (props) => {
 
-    const TodoComponent = {
+    const NameCap = {
         width: props.NameCap+"px"
     }
     return (
-        <div className="NameBlok" style={TodoComponent}>
+        <div className="NameBlok" style={NameCap}>
             <div className="NameOverflow">
                 <img src="image/iconfinder.png" alt=""/>
                 <div className="NameText">{props.name}</div>

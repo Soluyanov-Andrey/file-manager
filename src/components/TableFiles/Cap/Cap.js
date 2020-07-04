@@ -7,28 +7,32 @@ import "./Cap.css"
 export default class Cap extends Component {
     constructor(props) {
         super();
-        console.log(props.props.DataCap);
     }
 
-    onMouseDown = () =>{
-        console.log("конпка мышы нажата");
-        this.props.ext_function();
+    onMouseDownNameCap = () =>{
+        this.props.ext_function("NameCap");
     };
-    onMouseUp = () =>{
-        console.log("Кнопка мыши отпущена над элементом");
+    onMouseDownDataCap = () =>{
+        this.props.ext_function("DataCap");
+    };
+    onMouseDownTypeCap = () =>{
+        this.props.ext_function("TypeCap");
+    };
+    onMouseDownSizeCap = () =>{
+        this.props.ext_function("SizeCap");
     };
 
     render() {
         return (
             <div id="Cap">
                 <NameCap/>
-                  <div id="NameCapPartition" onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp}/>
+                  <div id="NameCapPartition" onMouseDown={this.onMouseDownNameCap}/>
                 <DataCap/>
-                  <div id="DataCapPartition"/>
+                  <div id="DataCapPartition" onMouseDown={this.onMouseDownDataCap}/>
                 <TypeCap/>
-                  <div id="TypeCapPartition"/>
+                  <div id="TypeCapPartition" onMouseDown={this.onMouseDownTypeCap}/>
                 <SizeCap/>
-                  <div id="SizeCapPartition"/>
+                  <div id="SizeCapPartition" onMouseDown={this.onMouseDownSizeCap}/>
             </div>
         );
     }
