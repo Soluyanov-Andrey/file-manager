@@ -30,19 +30,15 @@ export default class Cap extends Component {
 
     render() {
 
-        this.widthCap = {
-            // width: this.props.props.the_main[0].WidthCap
-        }
-        // console.log(this.props.props.DataCap)
         return (
             <div id="Cap">
-                <NameCap DataCap={this.props.DataCap}/>
+                <NameCap NameCap={this.props.props.NameCap}/>
                   <div id="NameCapPartition" onMouseDown={this.onMouseDownNameCap}/>
-                <DataCap/>
+                <DataCap DataCap={this.props.props.DataCap}/>
                   <div id="DataCapPartition" onMouseDown={this.onMouseDownDataCap}/>
-                <TypeCap/>
+                <TypeCap TypeCap={this.props.props.TypeCap}/>
                   <div id="TypeCapPartition" onMouseDown={this.onMouseDownTypeCap}/>
-                <SizeCap/>
+                <SizeCap SizeCap={this.props.props.SizeCap}/>
                   <div id="SizeCapPartition" onMouseDown={this.onMouseDownSizeCap}/>
             </div>
         );
