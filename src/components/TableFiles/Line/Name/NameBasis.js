@@ -3,9 +3,13 @@ import "./NameBasis.css"
 
 const NameBasis = (props) => {
     const NameBasisProps =props.props;
-
+    const TodoComponent = {
+        width: "300px",
+        float:"left",
+        overflow: "hidden"
+    }
     return (
-        <div className="NameBlok" style={{ width: "300px", float:"left",overflow: "hidden"}}>
+        <div className="NameBlok" style={TodoComponent}>
             <div className="NameOverflow">
                 <img src="image/iconfinder.png" alt=""/>
                 <div className="NameText">{NameBasisProps.name}</div>
