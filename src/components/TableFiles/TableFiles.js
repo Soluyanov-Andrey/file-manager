@@ -57,100 +57,78 @@ class TableFiles extends Component {
         window.removeEventListener('click', this.moving_remove, false);
     };
 
-
-    mausemove = (changeNameCap2) => {
-
-        console.log("mov-"+this.state)
-        if(this.activity_mouse == false){
-            console.log(this.activity_mouse)
+// возвращает значение -1 -2 +1 +2 в зависимости от того на сколько здвинулся курсор мыши
+    mausemove = (callback) => {
+        if (this.activity_mouse === false) {
             this.activity_mouse = true;
             this.position_mouse = event.pageX;
-            console.log("poz"+this.position_mouse)
         } else {
-            if(event.pageX < this.position_mouse){
-                console.log("position_mouse"+(this.position_mouse))
-                console.log("event.pageX"+(event.pageX))
-                let position_mouse2 = event.pageX
-                let po=this.position_mouse-position_mouse2
-                this.position_mouse = position_mouse2
-                console.log(">"+(-po))
-                 return changeNameCap2(-po)
-
-                // let s = this.position_mouse
-                // this.position_mouse = this.position_mouse-event.pageX
-                //  console.log("s"+s)
-                //  console.log("this.position_mouse"+(this.position_mouse))
-                // return this.position_mouse = this.position_mouse-event.pageX
+            if (event.pageX < this.position_mouse) {
+                let position_mouse_memory = event.pageX
+                let result = this.position_mouse - position_mouse_memory
+                this.position_mouse = position_mouse_memory
+                return callback(-result)
             }
-            if(event.pageX>this.position_mouse){
-                let position_mouse2 = event.pageX
-                let po=position_mouse2-this.position_mouse
-                this.position_mouse = position_mouse2
-                console.log(">"+(po))
-                return changeNameCap2(po)
+            if (event.pageX > this.position_mouse) {
+                let position_mouse_memory = event.pageX
+                let result = position_mouse_memory - this.position_mouse
+                this.position_mouse = position_mouse_memory
+                return callback(result)
             }
         }
 
 
-        this.maus=event.pageX
+        this.maus = event.pageX
     }
-    mausemove1 = (n) => {
 
-        console.log("fff44-"+n)
-    }
-    // showMessage() {
-    //     alert(this.state.WidthCap);
-    // }
-    //Срабатывает при изменении NameCap
-
-    changeNameCap2 = (a) => {
-        let b1 = this.state.NameCap
-
-        console.log("fff-"+b1)
+    NameCapСallback = (value) => {
         this.setState({
-
-            NameCap: b1+a
+            NameCap: this.state.NameCap + value
         })
     }
 
+    DataCapСallback = (value) => {
+        this.setState({
+            DataCap: this.state.DataCap + value
+        })
+    }
 
+    TypeCapСallback = (value) => {
+        this.setState({
+            TypeCap: this.state.TypeCap + value
+        })
+    }
 
+    SizeCapСallback = (value) => {
+        this.setState({
+            SizeCap: this.state.SizeCap + value
+        })
+    }
+
+    //Срабатывает при изменении NameCap
     changeNameCap = () => {
-        //this.showMessage();
-        this.mausemove(this.changeNameCap2)
+        this.mausemove(this.NameCapСallback)
 
     };
+
     //Срабатывает при изменении DataCap
     changeDataCap = () => {
-        let b = this.state.WidthCap + 1
-        // console.log(b);
-        this.setState({
-            DataCap: b
-        })
+        this.mausemove(this.DataCapСallback)
     };
-    //Срабатывает при изменении SizeCap
-    changeSizeCap = () => {
-        this.setState({
-            SizeCap: event.pageX
-        })
-    };
+
     //Срабатывает при изменении TypeCap
     changeTypeCap = () => {
-        this.setState({
-            TypeCap: event.pageX
-
-        })
+        this.mausemove(this.TypeCapСallback)
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
+    //Срабатывает при изменении SizeCap
+    changeSizeCap = () => {
+        this.mausemove(this.SizeCapСallback)
+    };
 
-        // console.log(nextState);
-        return true;
-
-    }
 
     render() {
-
+        // console.log(this.state);
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
@@ -164,8 +142,8 @@ class TableFiles extends Component {
                                 NameCap={this.state.NameCap}
                                 SizeCap={this.state.SizeCap}
                                 TypeCap={this.state.TypeCap}
-                    />
-                    )
+                            />
+                        )
                     })}
                 </div>
             </div>
