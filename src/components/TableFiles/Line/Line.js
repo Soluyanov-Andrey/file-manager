@@ -9,15 +9,12 @@ const Line = (props) => {
     const LineProps = props.line;
     // name: "Документ", data: "17.05.2002", type: "Пустая папка", size: 15, id: 1 }
 
-    const The_Main = props.the_main;
-    // { DataCap: 300, NameCap: 300, SizeCap: 300, TypeCap: 300 }
-
     return (
         <div className="Line" id={LineProps.id}>
-            <NameBasis name={LineProps.name} NameCap={The_Main.NameCap}/>
-            <DataBasis data={LineProps.data} DataCap={The_Main.DataCap}/>
-            <TypeBasis type={LineProps.type} TypeCap={The_Main.TypeCap}/>
-            <SizeBasis size={LineProps.size} SizeCap={The_Main.SizeCap}/>
+            <NameBasis name={LineProps.name} NameCap={props.NameCap}/>
+            <DataBasis data={LineProps.data} DataCap={props.DataCap}/>
+            <TypeBasis type={LineProps.type} TypeCap={props.TypeCap}/>
+            <SizeBasis size={LineProps.size} SizeCap={props.SizeCap}/>
         </div>
     );
 }
