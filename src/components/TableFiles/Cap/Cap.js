@@ -10,7 +10,7 @@ export default class Cap extends Component {
         //вот так не работало
         // const DataCap = props.props.the_main[0].DataCap
        //а вот так работало
-        this.DataCap = props.props.the_main[0].DataCap
+       //  this.DataCap = props.props.the_main[0].DataCap
 
     }
 
@@ -30,11 +30,15 @@ export default class Cap extends Component {
 
     render() {
 
+        this.widthCap = {
+            width: this.props.props.the_main[0].WidthCap
+        }
+        console.log(this.widthCap)
         return (
-            <div id="Cap">
-                <NameCap />
+            <div id="Cap" style={this.widthCap}>
+                <NameCap NameCap={this.props.props.the_main[0].NameCap}/>
                   <div id="NameCapPartition" onMouseDown={this.onMouseDownNameCap}/>
-                <DataCap DataCap={this.DataCap}/>
+                <DataCap DataCap={this.props.props.the_main[0].DataCap}/>
                   <div id="DataCapPartition" onMouseDown={this.onMouseDownDataCap}/>
                 <TypeCap/>
                   <div id="TypeCapPartition" onMouseDown={this.onMouseDownTypeCap}/>

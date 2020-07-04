@@ -12,6 +12,7 @@ class TableFiles extends Component {
                 {name: 'текст', data: '17.05.2004', type: 'Пустая папка', size: 15, id: 3}
             ],
             the_main: [{
+                WidthCap: 1300,
                 DataCap: 300,
                 NameCap: 300,
                 SizeCap: 300,
@@ -63,9 +64,12 @@ class TableFiles extends Component {
     };
     //Срабатывает при изменении DataCap
     changeDataCap = () => {
+        let b=this.state.the_main[0].WidthCap+1
+        // console.log(b);
         this.setState({
             the_main: [{
-                DataCap: event.pageX
+                DataCap: event.pageX,
+                WidthCap: b
             }
             ]
         })
@@ -91,7 +95,7 @@ class TableFiles extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
 
-        console.log(nextState.the_main[0].DataCap);
+        console.log(nextState);
         return true;
 
     }

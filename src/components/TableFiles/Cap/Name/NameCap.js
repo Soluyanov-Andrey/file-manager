@@ -1,8 +1,11 @@
 import React from "react";
 import "./NameCap.css"
-const NameCap = () => {
+const NameCap = (props) => {
+    const NameCap = {
+        width: props.NameCap+"px"
+    }
     return (
-        <div className="NameCap">
+        <div className="NameCap" style={NameCap}>
             <div className="NameCapOverflow">
                 <div className="NameCapText">&nbsp;Имя</div>
             </div>
