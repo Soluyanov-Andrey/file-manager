@@ -11,6 +11,7 @@ export default class Cap extends Component {
         // const DataCap = props.props.the_main[0].DataCap
        //а вот так работало
         this.DataCap = props.props.the_main[0].DataCap
+
     }
 
     onMouseDownNameCap = () =>{

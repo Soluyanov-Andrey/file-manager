@@ -91,7 +91,7 @@ class TableFiles extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
 
-        console.log(nextState.the_main[0]);
+        console.log(nextState.the_main[0].DataCap);
         return true;
 
     }
