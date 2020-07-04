@@ -1,6 +1,7 @@
 import React from "react";
 import "./DataCap.css"
-const DataCap = () => {
+const DataCap = (props) => {
+    console.log(props);
     return (
         <div className="DataCap">
             <div className="DataCapOverflow">

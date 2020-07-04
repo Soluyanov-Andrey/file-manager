@@ -7,9 +7,14 @@ import "./Cap.css"
 export default class Cap extends Component {
     constructor(props) {
         super();
+        //вот так не работало
+        // const DataCap = props.props.the_main[0].DataCap
+       //а вот так работало
+        this.DataCap = props.props.the_main[0].DataCap
     }
 
     onMouseDownNameCap = () =>{
+
         this.props.ext_function("NameCap");
     };
     onMouseDownDataCap = () =>{
@@ -23,11 +28,12 @@ export default class Cap extends Component {
     };
 
     render() {
+
         return (
             <div id="Cap">
-                <NameCap/>
+                <NameCap />
                   <div id="NameCapPartition" onMouseDown={this.onMouseDownNameCap}/>
-                <DataCap/>
+                <DataCap DataCap={this.DataCap}/>
                   <div id="DataCapPartition" onMouseDown={this.onMouseDownDataCap}/>
                 <TypeCap/>
                   <div id="TypeCapPartition" onMouseDown={this.onMouseDownTypeCap}/>

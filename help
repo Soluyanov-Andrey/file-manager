@@ -1,9 +1,1 @@
-  shouldComponentUpdate(nextProps, nextState) {
-
-        console.log(nextState.the_main[0]);
-        return true;
-
-    }
- срабатывает когда происходит обновление state или props  в компаненте
- можно смотреть state и смотреть что происходит в нем определяя в console.log
- нужное значение
+Небольшие эксперементы при передачи пропса
