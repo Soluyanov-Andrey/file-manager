@@ -20,47 +20,39 @@ class TableFiles extends Component {
             ]
         }
 
-
-        // document.body.addEventListener('click', foo, false);
     }
 
-    test = () => {
-        this.setState({
-            DataCapMove: true
-        })
-        window.addEventListener('mousemove', this.foo2, false);
-        window.addEventListener('click', this.foo, false);
+    //Добавили перемещение
+    moving = () => {
+        window.addEventListener('mousemove', this.changeState, false);
+        window.addEventListener('click', this.moving_remove, false);
     };
 
-    foo = () => {
-        window.removeEventListener('mousemove', this.foo2, false);
-        window.removeEventListener('click', this.foo, false);
+    //Удалили перемещение
+    moving_remove = () => {
+        window.removeEventListener('mousemove', this.changeState, false);
+        window.removeEventListener('click', this.moving_remove, false);
     };
-    // foo1 = () =>{window.addEventListener('click', this.foo, false); };
 
-    foo2 = () => {
+    changeState = () => {
         this.setState({
             the_main: [{
                 NameCap: event.pageX
             }
             ]
         })
-        // console.log(event.pageX);
     };
 
-    // foo4 = () =>{window.addEventListener('mousemove', this.foo2, false); };
     render() {
-        // this.foo1();
-        // this.foo4();
         return (
             <div id="TableFilesComponents">
                 <div id="TFilesOverflow">
-                    <Cap props={this.state} fun={this.test}/>
+                    <Cap props={this.state} ext_function={this.moving}/>
                     {this.state.line.map((props, index) => {
                         return (
                             <Line
                                 key={index}
-                                props={props}
+                                line={props}
                                 the_main={this.state.the_main[0]}
                             />
                         )

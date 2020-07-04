@@ -6,14 +6,18 @@ import SizeBasis from "./Size/SizeBasis";
 import "./Line.css"
 
 const Line = (props) => {
-   const LineProps =props.props;
+    const LineProps = props.line;
+    // name: "Документ", data: "17.05.2002", type: "Пустая папка", size: 15, id: 1 }
+
+    const The_Main = props.the_main;
+    // { DataCap: 300, NameCap: 300, SizeCap: 300, TypeCap: 300 }
 
     return (
         <div className="Line" id={LineProps.id}>
-            <NameBasis props={LineProps} the_main={props.the_main}/>
-            <DataBasis data={props.props.data}/>
-            <TypeBasis type={props.props.type}/>
-            <SizeBasis size={props.props.size}/>
+            <NameBasis name={LineProps.name} NameCap={The_Main.NameCap}/>
+            <DataBasis data={LineProps.data}/>
+            <TypeBasis type={LineProps.type}/>
+            <SizeBasis size={LineProps.size}/>
         </div>
     );
 }
