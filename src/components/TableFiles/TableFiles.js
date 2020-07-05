@@ -81,31 +81,41 @@ class TableFiles extends Component {
     }
 
     NameCapСallback = (value) => {
-        this.setState({
-            WidthCap: this.state.WidthCap + value,
-            NameCap: this.state.NameCap + value
-        })
+
+        if (this.state.NameCap + value > 50) {
+            this.setState({
+                WidthCap: this.state.WidthCap + value,
+                NameCap: this.state.NameCap + value
+            })
+
+        }
     }
 
     DataCapСallback = (value) => {
-        this.setState({
-            WidthCap: this.state.WidthCap + value,
-            DataCap: this.state.DataCap + value
-        })
+        if (this.state.DataCap + value > 50) {
+            this.setState({
+                WidthCap: this.state.WidthCap + value,
+                DataCap: this.state.DataCap + value
+            })
+        }
     }
 
     TypeCapСallback = (value) => {
-        this.setState({
-            WidthCap: this.state.WidthCap + value,
-            TypeCap: this.state.TypeCap + value
-        })
+        if (this.state.TypeCap + value > 50) {
+            this.setState({
+                WidthCap: this.state.WidthCap + value,
+                TypeCap: this.state.TypeCap + value
+            })
+        }
     }
 
     SizeCapСallback = (value) => {
-        this.setState({
-            WidthCap: this.state.WidthCap + value,
-            SizeCap: this.state.SizeCap + value
-        })
+        if (this.state.SizeCap + value > 50) {
+            this.setState({
+                WidthCap: this.state.WidthCap + value,
+                SizeCap: this.state.SizeCap + value
+            })
+        }
     }
 
     //Срабатывает при изменении NameCap
