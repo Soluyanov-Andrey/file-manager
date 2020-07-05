@@ -2,7 +2,7 @@ import React from "react";
 import "./TypeCap.css"
 const TypeCap = (props) => {
     const TypeCap = {
-        width: props.TypeCap+"px"
+        width: props.TypeCap-7+"px"
     }
     return (
         <div className="TypeCap" style={TypeCap}>

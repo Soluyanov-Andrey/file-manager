@@ -2,7 +2,7 @@ import React from "react";
 import "./DataCap.css"
 const DataCap = (props) => {
     const DataCap = {
-        width: props.DataCap+"px"
+        width: props.DataCap-7+"px"
     }
     return (
         <div className="DataCap" style={DataCap}>

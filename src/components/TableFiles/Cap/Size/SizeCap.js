@@ -3,7 +3,7 @@ import "./SizeCap.css"
 
 const SizeCap = (props) => {
     const SizeCap = {
-        width: props.SizeCap+"px"
+        width: props.SizeCap-7+"px"
     }
 
     return (

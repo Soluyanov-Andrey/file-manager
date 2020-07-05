@@ -2,7 +2,7 @@ import React from "react";
 import "./NameCap.css"
 const NameCap = (props) => {
     const NameCap = {
-        width: props.NameCap+"px"
+        width: props.NameCap-7+"px"
     }
     return (
         <div className="NameCap" style={NameCap}>

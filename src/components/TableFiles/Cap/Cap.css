@@ -1,5 +1,6 @@
 #Cap{
     /*width: 1250px;*/
+    user-select: none;
     height: 25px;
     border: 5px;
 

@@ -14,7 +14,7 @@ class TableFiles extends Component {
                 {name: 'Фаил', data: '17.05.2003', type: 'Пустая папка', size: 15, id: 2},
                 {name: 'текст', data: '17.05.2004', type: 'Пустая папка', size: 15, id: 3}
             ],
-            WidthCap: 1250,
+            WidthCap: 1200,
             DataCap: 300,
             NameCap: 300,
             SizeCap: 300,
