@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Table from "./Table/Table";
 class App extends Component {
+    state = {
+        line: [
+            { name:'Документ', data: '17.05.2002', type:'Пустая папка',size: 15},
+            { name:'Фаил', data: '17.05.2003', type:'Пустая папка',size: 15},
+            { name:'текст', data: '17.05.2004', type:'Пустая папка',size: 15}
+        ]
+        // pageTitle: 'React components'
+    }
+
   render() {
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Table props={this.state}/>
     );
   }
 }
