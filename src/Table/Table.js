@@ -5,7 +5,7 @@ const Table = (props) => {
     // const TypeCap = {
     //     width: props.TypeCap+"px"
     // }
-    console.log(props)
+    // console.log(props)
     return (
         <div className="Table" >
            <Ramka/>

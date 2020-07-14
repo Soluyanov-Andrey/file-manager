@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 
 import './App.css';
 import Table from "./Table/Table";
@@ -13,11 +14,25 @@ class App extends Component {
     }
 
   render() {
-
+      console.log(this.props)
     return (
         <Table props={this.state}/>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+
+    return{
+        counter: state
+    }
+}
+
+function mapDispatchToProps(dispatch){
+
+    return{
+
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App)
