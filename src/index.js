@@ -21,6 +21,7 @@ const state = {
 
 }
 function pow(masiv, adres,level) {
+    let b = true;
     let index;
     let str=" ";
     for (index = 0; index < masiv.length; ++index) {
@@ -28,14 +29,17 @@ function pow(masiv, adres,level) {
         // console.log("+++",masiv[index].adres);
          // console.log(masiv[index].adres+'-'+masiv[index].id)
         if(masiv[index].adres_predka == adres){
+            b = false;
             //str.repeat коипирует строку str заданное количество раз
             console.log(str.repeat(level)+masiv[index].ico);
             pow(masiv, masiv[index].adres_svoi,level+5)
 
         }
-
-        //
+      if(index == masiv.length-1 && b == false ){
+        console.log("обернул");
+      }
     }
+
     // console.log(masiv);
 }
 pow(state.line,"0",0)

@@ -5,11 +5,25 @@ const Table = (props) => {
     // const TypeCap = {
     //     width: props.TypeCap+"px"
     // }
-    console.log(props)
+
+    // const elements = todos.map((item)=>{
+    //
+    //     return (
+    //         <li>
+    //
+    //         </li>
+    //
+    //     )
+    // });
+    let index;
+    for (index = 0; index < 10; ++index) {
+        console.log(index);
+    }
     return (
-        <div className="Table" >
-           <Ramka/>
-        </div>
+
+        <ul>
+           <li>hhh</li>
+        </ul>
     );
 };
 

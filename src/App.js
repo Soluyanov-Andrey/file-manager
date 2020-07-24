@@ -23,18 +23,10 @@ class App extends Component {
     }
 
   render() {
-      function pow(masiv) {
-          let children = [];
-          let index;
-          for (index = 0; index < masiv; ++index) {
-              children.push(<Table/>)
-          }
-          return children
-      }
-      let showHTMLData = pow(5);
+
 
     return (
-        <div>{showHTMLData}</div>
+        <div><Table/></div>
     );
   }
 }
