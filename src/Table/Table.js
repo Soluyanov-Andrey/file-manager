@@ -1,30 +1,21 @@
 import React from "react";
 import "./Table.css"
 import Ramka from "./Ramka/Ramka"
-const Table = (props) => {
-    // const TypeCap = {
-    //     width: props.TypeCap+"px"
-    // }
+const Table = (data) => {
 
-    // const elements = todos.map((item)=>{
-    //
-    //     return (
-    //         <li>
-    //
-    //         </li>
-    //
-    //     )
-    // });
-    let index;
-    for (index = 0; index < 10; ++index) {
-        console.log(index);
-    }
-    return (
+        const { id, parentId, name, children } = data;
 
-        <ul>
-           <li>hhh</li>
-        </ul>
-    );
-};
+        return (
+            <div>
+                <b>Id: {id}</b>
+                <span>name: {name}</span>
+                {
+                    children &&
+                    children.map((i, n) => <Table data={i} key={n} />)
+                }
+            </div>
+        );
+    };
+
 
 export default Table;
