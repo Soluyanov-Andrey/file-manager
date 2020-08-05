@@ -29,7 +29,7 @@ class TreeMenu extends Component {
                             "ico": "Папка",
                             "name": "Плагины",
                             "type": "Папка",
-                            "adress": "0-1-2",
+                            "adress": "0-1-22",
                             "presence_сhild":false,
                             "сhild": []
                         },
@@ -37,7 +37,7 @@ class TreeMenu extends Component {
                             "ico": "Папка",
                             "name": "Модули",
                             "type": "Папка",
-                            "adress": "0-1-2",
+                            "adress": "0-1-23",
                             "presence_сhild":false,
                             "сhild": []
                         }]
@@ -46,7 +46,7 @@ class TreeMenu extends Component {
                         "ico": "Папка",
                         "name": "Отзывы",
                         "type": "Папка",
-                        "adress": "0-1-2",
+                        "adress": "0-1-25",
                         "presence_сhild":false,
                         "сhild": []
                     },
@@ -54,7 +54,7 @@ class TreeMenu extends Component {
                         "ico": "Папка",
                         "name": "Контакты",
                         "type": "Папка",
-                        "adress": "0-1-2",
+                        "adress": "0-1-24",
                         "presence_сhild":false,
                         "сhild": []
                     }]
