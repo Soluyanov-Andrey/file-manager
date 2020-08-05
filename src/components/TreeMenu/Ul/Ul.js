@@ -9,11 +9,12 @@ const Ul = ({ items }) => (
 
                     <li id = {n.adress}>
                         <div className="tree_menu_li_blok">
-                            <img className="tree_menu_li_side" src="image/TreeMenu/arrow_side.png"/>
+                            <img className="tree_menu_li_side" src={n.presence_сhild  ? "image/TreeMenu/arrow_side.png" : null}/>
                             <img className="tree_menu_li_folder" height="20px" width="15px" src="image/TreeMenu/folder.png"/>
                             {n.name}
                         </div>
                         {n.сhild && n.сhild.length ? <Ul items={n.сhild} /> : null}
+
                     </li>
 
 

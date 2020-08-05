@@ -10,19 +10,19 @@ class TreeMenu extends Component {
                 "name": "главное меню",
                 "type": "Папка",
                 "adress": "0-1",
-                "presence_сhild":"true",
+                "presence_сhild": true,
                 "сhild": [{
                     "ico": "Папка",
                     "name": "База знаний",
                     "type": "Папка",
                     "adress": "0-1-1",
-                    "presence_сhild":"true",
+                    "presence_сhild":true,
                     "сhild": [{
                         "ico": "Папка",
                         "name": "Компоненты",
                         "type": "Папка",
                         "adress": "0-1-2",
-                        "presence_сhild":"false",
+                        "presence_сhild":false,
                         "сhild": []
                     },
                         {
@@ -30,7 +30,7 @@ class TreeMenu extends Component {
                             "name": "Плагины",
                             "type": "Папка",
                             "adress": "0-1-2",
-                            "presence_сhild":"false",
+                            "presence_сhild":false,
                             "сhild": []
                         },
                         {
@@ -38,7 +38,7 @@ class TreeMenu extends Component {
                             "name": "Модули",
                             "type": "Папка",
                             "adress": "0-1-2",
-                            "presence_сhild":"false",
+                            "presence_сhild":false,
                             "сhild": []
                         }]
                 },
@@ -47,7 +47,7 @@ class TreeMenu extends Component {
                         "name": "Отзывы",
                         "type": "Папка",
                         "adress": "0-1-2",
-                        "presence_сhild":"false",
+                        "presence_сhild":false,
                         "сhild": []
                     },
                     {
@@ -55,7 +55,7 @@ class TreeMenu extends Component {
                         "name": "Контакты",
                         "type": "Папка",
                         "adress": "0-1-2",
-                        "presence_сhild":"false",
+                        "presence_сhild":false,
                         "сhild": []
                     }]
             },
@@ -64,7 +64,7 @@ class TreeMenu extends Component {
                     "name": "главное меню2",
                     "type": "Папка",
                     "adress": "0-2",
-                    "presence_сhild":"false",
+                    "presence_сhild":false,
                     "сhild": []
                 }
             ]
