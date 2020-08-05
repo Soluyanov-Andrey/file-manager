@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
-import './App.css';
-
 import Li from "./Li/Li";
 const Ul = ({ items }) => (
     <React.Fragment>
-
+        <ul class="tree_menu_ul">
         {items.map(n => (
-            <ol className="comment" key={n.adress}>
-                <Li items={n.name} id= {n.adress}/>
-                {n.сhild && n.сhild.length ? <Comments items={n.сhild} /> : null}
-            </ol>
+
+                <React.Fragment>
+
+                    <li id = {n.adress}>
+                        <div className="tree_menu_li_blok">
+                            <img className="tree_menu_li_side" src="image/TreeMenu/arrow_side.png"/>
+                            <img className="tree_menu_li_folder" height="20px" width="15px" src="image/TreeMenu/folder.png"/>
+                            {n.name}
+                        </div>
+                        {n.сhild && n.сhild.length ? <Ul items={n.сhild} /> : null}
+                    </li>
+
+
+                {/*<Li items={n.name} id= {n.adress}/>*/}
+
+                </React.Fragment>
+
+
         ))}
+        </ul>
     </React.Fragment>
 );
 
