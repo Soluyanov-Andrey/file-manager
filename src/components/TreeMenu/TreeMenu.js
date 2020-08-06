@@ -73,6 +73,9 @@ class TreeMenu extends Component {
 
     }
 
+    handleClick() {
+        console.log("hh")
+    }
 
     render() {
         return(
