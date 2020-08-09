@@ -73,8 +73,8 @@ class TreeMenu extends Component {
 
     }
 
-    handleClick() {
-        console.log("hh")
+    handleClick(b) {
+        console.log(b)
     }
 
     render() {
@@ -82,7 +82,7 @@ class TreeMenu extends Component {
             <div id="tree_menu">
                 <div id="tree_menu_blok">
 
-                       <Ul items={this.state.knot} />
+                       <Ul items={this.state.knot} ext_function={this.handleClick} />
 
                 </div>
                 <div id="tree_menu_separator"></div>
