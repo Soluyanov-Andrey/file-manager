@@ -67,15 +67,47 @@ class TreeMenu extends Component {
                     "presence_сhild":false,
                     "сhild": []
                 }
-            ]
+            ],
+            "visible": {
+
+            }
 
         }
 
     }
 
+    add_node = (mostly_tree,s) => {
+
+        if(s == undefined){  var s = { } }
+
+        // //перебираем массив рекурсивно
+        for (let i = 0; i <mostly_tree.length; i++){
+
+            //нашли нужный адресс в дереве вставляем сhild
+            if (mostly_tree[i].presence_сhild == true) {
+                // console.log(mostly_tree[i].сhild[0].adress)
+                s[mostly_tree[i].сhild[0].adress]= false;
+                 this.add_node(mostly_tree[i].сhild,s)
+
+            }
+
+
+        }
+
+        return s;
+    }
+
     handleClick(b) {
 
        console.log(b)
+    }
+    componentWillMount(){
+       let  per =this.add_node(this.state.knot);
+
+        this.setState({ visible: per })
+    }
+    componentDidMount(){
+        console.log(this.state)
     }
 
     render() {
