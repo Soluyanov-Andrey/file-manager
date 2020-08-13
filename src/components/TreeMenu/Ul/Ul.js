@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 
 const Ul = ({ items ,ext}) => {
 
+    const p = (s) => {
+        console.log(s);
+          return {opacity: 0}
+    }
+
+    const WidthCap = {
+
+    }
+
    return(
     <React.Fragment>
-        <ul className="tree_menu_ul">
+        <ul className="tree_menu_ul" >
             {items.map(n => (
-                <li key = {n.adress} id = {n.adress} >
+                <li key = {n.adress} id = {n.adress} style={p(n.adress)} >
                     <div className="tree_menu_li_blok" onClick={()=>(ext(n.adress))} >
                         <img onClick={()=>(ext(n.adress))} className="tree_menu_li_side" src = {n.presence_сhild  ? "image/TreeMenu/arrow_side.png" : null}/>
                         <img className="tree_menu_li_folder" height="20px" width="15px" src="image/TreeMenu/folder.png"/>
