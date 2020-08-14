@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Ul from "./Ul/Ul";
-
+import "./TreeMenu.css"
 class TreeMenu extends Component {
     constructor() {
         super();
@@ -68,9 +68,10 @@ class TreeMenu extends Component {
                     "сhild": []
                 }
             ],
-            "visible": {
+            visible : {
 
-            }
+            },
+
 
         }
 
@@ -86,7 +87,7 @@ class TreeMenu extends Component {
             //нашли нужный адресс в дереве вставляем сhild
             if (mostly_tree[i].presence_сhild == true) {
                 // console.log(mostly_tree[i].сhild[0].adress)
-                s[mostly_tree[i].сhild[0].adress]= false;
+                s[mostly_tree[i].adress]= false;
                  this.add_node(mostly_tree[i].сhild,s)
 
             }
@@ -97,14 +98,22 @@ class TreeMenu extends Component {
         return s;
     }
 
-    handleClick(b) {
+    handleClick = (adress) => {
 
-       console.log(b)
+        let obj_visible = this.state.visible;
+        //заполняем объект obj_visible в котором находяться адреса открытых сылок нужными параметрами
+        if(obj_visible[adress] == false){ obj_visible[adress]= true } else { obj_visible[adress]= false }
+
+          this.setState({visible : obj_visible})
+
+
     }
     componentWillMount(){
        let  per =this.add_node(this.state.knot);
 
         this.setState({ visible: per })
+
+
     }
     componentDidMount(){
         console.log(this.state)
@@ -115,7 +124,7 @@ class TreeMenu extends Component {
             <div id="tree_menu">
                 <div id="tree_menu_blok">
 
-                       <Ul items={this.state.knot} ext={this.handleClick} />
+                       <Ul items={this.state.knot} ext={this.handleClick} visible={this.state.visible}/>
 
                 </div>
                 <div id="tree_menu_separator"></div>
