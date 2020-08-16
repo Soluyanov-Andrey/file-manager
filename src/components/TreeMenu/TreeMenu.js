@@ -113,15 +113,33 @@ class TreeMenu extends Component {
 
         this.setState({ visible: per })
 
+        //отменяет выпадение стандартного меню при нажатии правой кнопки.
+        document.body.oncontextmenu = function (e) {
+            // или так :
+            return false;
+            // или так :
+            /* if (e) {
+                    e.preventDefault();
+                } else {
+                    event.returnValue = false;
+                }
+            */
+        };
 
     }
+
     componentDidMount(){
         console.log(this.state)
+    }
+    visible_blok1(){
+        console.log("jjjj")
     }
 
     render() {
         return(
+
             <div id="tree_menu">
+                <div id="dd" onContextMenu={this.visible_blok1}>gggg</div>
                 <div id="tree_menu_blok">
 
                        <Ul items={this.state.knot} ext={this.handleClick} visible={this.state.visible}/>
