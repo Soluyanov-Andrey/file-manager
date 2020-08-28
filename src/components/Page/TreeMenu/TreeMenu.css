@@ -1,43 +1,41 @@
-.tree_menu_ul, .tree_menu_ul ul, .tree_menu_ul li {
+.TreeMenu_ul, .TreeMenu_ul ul, .TreeMenu_ul li {
     margin: 0; padding: 0; line-height: 1.2; list-style: none;
 }
-
-.tree_menu_ul ul {margin: 0 0 0 0px; /* отступ вертикальной линии */}
-.tree_menu_ul > li:not(:only-child), .tree_menu_ul li li {
+.TreeMenu_ul ul {margin: 0 0 0 0px; /* отступ вертикальной линии */}
+.TreeMenu_ul > li:not(:only-child), .Tree_Menu_ul li li {
     position: relative;
     padding: 3px 0 0 20px; /* отступ текста */
 }
-.tree_menu_ul li {
+.TreeMenu_ul li {
     white-space: nowrap;
 }
-#tree_menu_separator{
+#TreeMenu_separator{
     float: left;
     border-left: 1px solid grey;
     height: 150px;
     width: 5px;
 }
-#tree_menu_blok{
+#TreeMenu_blok{
     user-select: none;
     float: left;
+    /*!!!изменяет высоту TreeMenu*/
     height: 150px;
+    /*!!!изменяет ширину TreeMenu*/
     width: 150px;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.tree_menu_li_folder{
+.TreeMenu_li_folder{
     position: relative;
     bottom: -5px;
 }
-.tree_menu_li_blok{
+.TreeMenu_li_blok{
     width: 150px;
     height: 25px;
     border: 1px solid white ;
 }
-.tree_menu_li_blok:hover {
+.TreeMenu_li_blok:hover {
     padding: 0px;
     border: 1px  solid #b8d6fb;
     background: linear-gradient(to top ,#edf4fd ,#f9fbfd ); /* Цвет фона под ссылкой */
-}
-#vis{
-    display: none;
 }

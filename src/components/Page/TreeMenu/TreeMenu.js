@@ -138,14 +138,14 @@ class TreeMenu extends Component {
     render() {
         return(
 
-            <div id="tree_menu">
+            <div id="TreeMenu">
                 <div id="dd" onContextMenu={this.visible_blok1}>gggg</div>
-                <div id="tree_menu_blok">
+                <div id="TreeMenu_blok">
 
                        <Ul items={this.state.knot} ext={this.handleClick} visible={this.state.visible}/>
 
                 </div>
-                <div id="tree_menu_separator"></div>
+                <div id="TreeMenu_separator"></div>
             </div>
         )
 

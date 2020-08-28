@@ -14,11 +14,11 @@ class TableFiles extends Component {
                 {name: 'Фаил', data: '17.05.2003', type: 'Пустая папка', size: 15, id: 2},
                 {name: 'текст', data: '17.05.2004', type: 'Пустая папка', size: 15, id: 3}
             ],
-            WidthCap: 1200,
-            DataCap: 300,
-            NameCap: 300,
-            SizeCap: 300,
-            TypeCap: 300
+            WidthCap: 650,
+            DataCap: 150,
+            NameCap: 150,
+            SizeCap: 150,
+            TypeCap: 150
 
         }
 
@@ -143,7 +143,7 @@ class TableFiles extends Component {
     render() {
         // console.log(this.state);
         return (
-            <div id="TableFilesComponents">
+            <div id="TableFiles">
                 <div id="TFilesOverflow">
                     <Cap props={this.state} ext_function={this.moving}/>
                     {this.state.line.map((props, index) => {

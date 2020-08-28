@@ -5,3 +5,8 @@
     border: 5px;
 
 }
+#TableFiles{
+
+    height: 500px;
+    overflow-x: scroll;
+}
