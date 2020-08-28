@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import TableFiles from "./TableFiles/TableFiles";
 import TreeMenu from "./TreeMenu/TreeMenu";
-
+import AdressBloсk from "./AdressBloсk/AdressBloсk";
 class Page extends Component {
     constructor() {
         super();
@@ -11,6 +11,7 @@ class Page extends Component {
         // console.log(this.state);
         return (
             <React.Fragment>
+                <AdressBloсk/>
                 <TreeMenu/>
                 <TableFiles/>
 
